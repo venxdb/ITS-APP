@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) [2024] [Michele Venturini Xhuljan Pjetri Jasmina Rotella]
+Copyright (c) [2024] [Michele Venturini Jasmina Rotella Xhuljan Pjetri ]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
