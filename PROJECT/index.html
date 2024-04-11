@@ -5,41 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ITS App</title>
     <link rel="stylesheet" href="css/main.css">
-    <script src="/js/index.js"></script>
- 
-</head>
 </head>
 <body>
-    <!--------header---->
     <header>
+        <!-- Contenuto dell'intestazione -->
     </header>
-    <!--copertina-->
+
     <div class="centrale">
-    <div class="copertina">
-        <div id="logo">
+        <div class="copertina">
+            <div id="logo"></div>
+            <h2>SERVIZI DI GESTIONE SCOLASTICA PER ISTITUTI TECNICI SUPERIORI</h2>
         </div>
-        <h2>SERVIZI DI GESTIONE SCOLASTICA PER ISTITUTI TECNICI SUPERIORI</h2>
+
+        <div class="cards">
+            <div class="cardscont">
+                <p class="image-coordinatore" ></p>
+                <button class="button" data-role="coordinatore"><a href="#">COORDINATORE</a><a href="#0" class="button-text">ACCEDI</a></button>
+            </div>
+
+            <div class="cardscont">
+                <p class="image-docente"></p>
+                <button class="button" data-role="docente"><a href="#">DOCENTE</a><a href="#0" class="button-text">ACCEDI</a></button>
+            </div>
+
+            <div class="cardscont">
+                <p class="image-studente"></p>
+                <button class="button" data-role="studente"><a href="#">STUDENTE</a><a href="#0" class="button-text">ACCEDI</a></button>
+            </div>
+        </div>
     </div>
-    <!--cards-->
-    <div class="cards">
-        <div class="cardscont">
-            <p id="logoc"></p>
-            <button class="button" data-role="coordinatore"><a href="#">COORDINATORE</a><a href="#" class="button-text">ACCEDI</a></button>
-
-        </div>
-        <div class="cardscont">
-            <p id="logoc" style="background: url(/images/logod.svg); background-size: contain;"></p>
-            <button class="button" data-role="docente"><a href="#">DOCENTE</a><a href="#" class="button-text">ACCEDI</a></button>
-
-        </div>
-        <div class="cardscont">
-            <p id="logoc" style="background: url(/images/logos.svg); background-size: contain;"></p>
-            <button class="button" data-role="studente"><a href="#">STUDENTE</a><a href="#" class="button-text">ACCEDI</a></button>
-
-        </div>
-        
-    </div>
-</div>
-
+    
+    <script src="/js/index.js"></script>
 </body>
 </html>
+
