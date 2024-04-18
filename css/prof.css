@@ -1,0 +1,105 @@
+* {
+  
+    box-sizing: border-box;
+    --blubackground: #DAF0FA;
+    --blutext: #447890;
+    --boxcolor: #f5f5f5;
+    --hovertablecolor: #ccefff;
+    --navcolor: #84cbeb;
+    --textlightcolor: #fff;
+    --textnavcolordarker: #84cbeb;
+    --border-rad:0 3.75rem 0rem 0rem;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root{
+    --wa: 120px;
+}
+
+
+
+body {
+    font: 1em Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a{
+    color: white;
+    font-size: 25px;
+}
+#cornice {
+    background-color: var(--boxcolor);
+    color: var(--textnavcolordarker);
+    border-radius: 25px;
+    padding: 10px;
+}
+
+nav {
+    height: 114px;
+    position: relative;
+    width: 100%;
+}
+
+nav div {
+    background-color: var(--navcolor);
+    border-right: 1px solid #000;
+    border-radius: 0 50px 0 0;
+    display: inline-block;
+    height: inherit;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    text-align: end;
+    width: 283px;
+    z-index: 6;   
+}
+
+nav div:hover {
+    background-color: var(--blubackground);
+   
+}
+nav div:hover a {
+    color: var(--textnavcolordarker);
+}
+
+nav div:nth-child(4){
+    right: calc(var(--wa) - 80px);
+    z-index: 7;
+}
+nav div:nth-child(3){
+    right: calc(var(--wa) + 120px);
+    z-index: 8;
+}
+nav div:nth-child(2){
+    right: calc(var(--wa) + 320px);
+    z-index: 9;
+}
+
+
+nav div:nth-child(1):hover{
+    background-color: var(--blubackground)
+}
+nav div:nth-child(1){
+    right: calc(var(--wa) + 520px);
+    z-index: 10;
+    background-color: var(--blubackground);
+    
+}
+
+/*******pagina*********/
+/***********titolo******/
+.nome {
+    display: inline;
+    color: var(--blutext);
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 35px;
+    text-transform: uppercase;
+}
