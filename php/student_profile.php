@@ -18,14 +18,16 @@ include_once 'backend/access_control.php';
         <?php
         session_start();
     
-        // Connessione al database
-        $servername = "localhost";
-        $username = "itsapp";
-        $password = "password";
-        $dbname = "my_itsapp";
+         // Connessione al database
+$user = 'root';
+$password = 'root';
+$db = 'itsapp';
+$host = 'localhost';
+$port = 3306;
 
-        $conn = new mysqli($servername, $username, $password, $dbname);
 
+
+$conn = new mysqli($host, $user, $password, $db, $port);
         // Verifica della connessione
         if ($conn->connect_error) {
             die("Connessione fallita: " . $conn->connect_error);

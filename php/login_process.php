@@ -7,12 +7,12 @@ session_start();
 // Connessione al database
 $user = 'root';
 $password = 'root';
-$db = 'inventory';
+$db = 'itsapp';
 $host = 'localhost';
 
 
 
-$conn = new mysqli($user, $password, $db, $host);
+$conn = new mysqli($host, $user, $password, $db);
 
 if ($conn->connect_error) {
     die("Connessione fallita: " . $conn->connect_error);
@@ -37,15 +37,15 @@ $result_coordinatori = $conn->query($sql_coordinatori);
 // Verifica se l'utente è presente nella tabella professori
 if ($result_professori->num_rows > 0) {
     // Utente trovato nella tabella professori
-    header("Location: ../professor_profile.php");
+    header("Location: ./professor_profile.php");
     exit;
 } elseif ($result_users->num_rows > 0) {
     // Utente trovato nella tabella studenti
-    header("Location: ../student_profile.php");
+    header("Location: ./student_profile.php");
     exit;
 } elseif ($result_coordinatori->num_rows > 0) {
     // Utente trovato nella tabella coordinatori
-    header("Location: ../coordinator_profile.php");
+    header("Location: ./coordinator_profile.php");
     exit;
 } else {
     // Utente non trovato in nessuna delle tabelle

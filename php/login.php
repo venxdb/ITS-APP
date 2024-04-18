@@ -18,7 +18,7 @@
 
             <div class="centrale">
                 <div class="login-container login">
-                    <form id="login-form" action="../backend/login_process.php" method="post">
+                    <form id="login-form" action="./login_process.php" method="post">
                     <label >username</label>
                         <input
                             type="text"
