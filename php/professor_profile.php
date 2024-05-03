@@ -3,36 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professor Profile</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/prof.css">
+    <title>Profilo Professore</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <nav>
-        
-        <div><a id="cornice" href="#0">Home</a></div>
-       <div><a href="#0">avvisi</a></div>
-       <div><a href="#0">registro</a></div>
-       <div><a href="#0">materiali</a></div>
+        <div ><div id="cornice" ><a href="#0">Home</a></div></div>
+        <div><a href="#0">Avvisi</a></div>
+        <div><a href="#0">Registro</a></div>
+        <div><a href="#0">Orari</a></div>
+        <div><a href="#0">Materiali</a></div>
     </nav>
-  
     <div class="profile-container">
-        <img src="/img/logoc.svg" alt="">
+        
         <?php
         session_start();
 
-        
-       // Connessione al database
-$user = 'root';
-$password = 'root';
-$db = 'itsapp';
-$host = 'localhost';
-$port = 3306;
+        // Connessione al database
+        $user = 'root';
+        $password = 'root';
+        $db = 'itsapp';
+        $host = 'localhost';
+        $port = 3306;
 
-
-
-$conn = new mysqli($host, $user, $password, $db, $port);
+        $conn = new mysqli($host, $user, $password, $db, $port);
         // Verifica della connessione
         if ($conn->connect_error) {
             die("Connessione fallita: " . $conn->connect_error);
@@ -42,13 +36,12 @@ $conn = new mysqli($host, $user, $password, $db, $port);
         $professor_id = $_SESSION['professor_id']; // Supponiamo che l'id del professore sia memorizzato nella sessione
         $sql = "SELECT nome, cognome, foto_profilo, orario_lezioni FROM professori";
         $result = $conn->query($sql);
-
         if ($result->num_rows > 0) {
             // Output dei dati del professore
             $row = $result->fetch_assoc();
-            echo "<p >Nome: " . $row["nome"] . "</p>";
-            echo "<p>Cognome: " . $row["cognome"] . "</p>";
-           echo "<img  src='data:image/png;base64,".base64_encode($row['foto_profilo'])."' alt='Foto Profilo'>";
+            echo "<div class='titolo'><img src='../img/prof-icn.svg' alt='Icona Professore' class='icn'><h2>" . $row["nome"] . " " . $row["cognome"] . "</h2></div>";
+            echo "<div id='rettangolo1'><img src='data:image/png;base64," . base64_encode($row['foto_profilo']) . "' alt='Foto Profilo' id='foto-prof'><div id='link-prof'><a href='#0'>Il tuo account</a><a href='#0'>Impostazioni</a><a href='#0'>Esci</a></div></div>";
+            
             echo "<p>Orario delle lezioni settimanali:</p>";
             echo "<p>" . $row["orario_lezioni"] . "</p>";
         } else {

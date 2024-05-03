@@ -1,0 +1,536 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #DAF0FA;
+}
+
+.centrale {
+    display: grid;
+    place-items: center;
+}
+
+header {
+    background: url('../images/Risorsa 9.svg') no-repeat;
+    width: 6.87381rem;
+    height: 6.04894rem;
+    margin: 1rem;
+}
+
+.copertina {
+    width: 48.625rem;
+    height: 11.3035rem;
+    flex-shrink: 0;
+    border-radius: 3.125rem;
+    background: var(--blu, #8BCEEC);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#logo {
+    background: url("../images/Risorsa 10.svg") no-repeat;
+    display: flex;
+    width: 17.25131rem;
+    height: 6.04913rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-top: 10px;
+}
+
+.copertina h2 {
+    display: flex;
+    width: 38.64919rem;
+    height: 2.55056rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 0.9375rem;
+    font-weight: 700;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.31rem;
+    margin-top: 1.31rem;
+}
+
+.cards .cardscont {
+    width: 15rem;
+    height: 15rem;
+    flex-shrink: 0;
+    border-radius: 2.125rem;
+    background: var(--blu, #8BCEEC);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cards .cardscont p {
+    background-size: cover;
+    width: 7rem;
+    height: 7rem;
+    flex-shrink: 0;
+}
+
+.cards .cardscont:hover {
+    background-color: #FFF;
+}
+
+.cards .cardscont .image-coordinatore{
+    background-image: url("../images/logoc.svg");
+}
+
+.cards .cardscont:hover .image-coordinatore {
+    background-image: url("../images/logochover.svg");
+}
+.cards .cardscont .image-docente{
+    background-image: url("../images/logod.svg");
+}
+.cards .cardscont:hover .image-docente {
+    background-image: url("../images/logodhover.svg");
+}
+.cards .cardscont .image-studente{
+    background-image: url("../images/logos.svg");
+}
+
+.cards .cardscont:hover .image-studente {
+    background-image: url("../images/logoshover.svg");
+}
+
+.cards .cardscont button {
+    width: 10rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    border-radius: 0.875rem;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cards .cardscont button > a {
+    color: var(--orange, #FF4040);
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.09375rem;
+    text-decoration: none;
+}
+
+.button .button-text {
+    display: none;
+    color: var(--orange, #FF4040);
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.09375rem;
+    text-decoration: none;
+}
+
+.button:hover .button-text {
+    display: inline;
+}
+
+.button:hover a {
+    display: none;
+}
+.fotoprof {
+    width: 136px;
+    height: 167px;
+}
+
+:root {
+    --colortext: #447890;
+}
+
+h2 {
+    font-size: 40px;
+    color: var(--colortext);
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 30px;
+}
+
+.icn {
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+* {
+  
+    box-sizing: border-box;
+    --blubackground: #DAF0FA;
+    --blutext: #447890;
+    --boxcolor: #f5f5f5;
+    --hovertablecolor: #ccefff;
+    --navcolor: #84cbeb;
+    --textlightcolor: #fff;
+    --textnavcolordarker: #84cbeb;
+    --border-rad:0 3.75rem 0rem 0rem;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+body {
+    font: 1em Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/*******nav*********/
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+    right: 10px;
+    flex-shrink:10;
+    background-color: #f6f6f4 ;
+}
+
+nav div {
+    height: 115px;
+    background-color: var(--navcolor);
+    padding: 10px;
+    border-radius:0 25px 0 0; 
+
+
+}
+
+
+#cornice {
+    background-color: var(--boxcolor);
+    border-radius: 10px;
+    width: 100px;
+    height: 25px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+nav div:hover {
+    background-color: var(--blubackground);
+    border-radius:0 25px 0 0; 
+}
+
+nav div:nth-child(1) {
+    background-color: var(--blubackground);
+    border-radius:0 25px 0 0; 
+    flex-shrink: 19;
+}
+
+
+
+
+/*******pagina*********/
+/***********titolo******/
+.nome {
+    display: inline;
+    color: var(--blutext);
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 35px;
+    text-transform: uppercase;
+}
+
+.copertina{
+    width: 48.625rem;
+    height: 11.3035rem;
+    flex-shrink: 0;
+    border-radius: 3.125rem;
+    background: var(--blu, #8BCEEC);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#logo {
+    background: url(../img/ITSApplogo.svg) no-repeat;
+    display: flex;
+    width: 17.25131rem;
+    height: 6.04913rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-top: 10px;
+}
+
+.copertina h2 {
+    display: flex;
+    width: 38.64919rem;
+    height: 2.55056rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-weight: 700;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.31rem;
+    margin-top: 1.31rem;
+}
+
+.cards div {
+    width: 15rem;
+    height: 15rem;
+    flex-shrink: 0;
+    border-radius: 2.125rem;
+    background: var(--blu, #8BCEEC);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.11);
+    
+}
+
+
+#logoc {
+    background: url(../img/logoc.svg) no-repeat;
+    background-size: cover;
+    width: 7rem;
+    height: 7rem;
+    flex-shrink: 0;
+    background-position: center;
+}
+
+
+
+
+.cardscont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cardscont button {
+    width: 10rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    border-radius: 0.875rem;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    
+}
+
+.cardscont button > a {
+    color: var(--orange, #FF4040);
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.09375rem;
+    text-decoration: none;
+}
+
+.button .button-text {
+    display: none;
+    color: var(--orange, #FF4040);
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.09375rem;
+    text-decoration: none;
+
+}
+
+.button:hover .button-text {
+    display: inline;
+}
+
+.button:hover a {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+    font: 1em sans-serif;
+}
+body {
+    background: #DAF0FA;
+}
+.centrale {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+   }
+header {
+    background: url(../img/logo.svg) no-repeat;
+    width: 6.87381rem;
+    height: 6.04894rem;  
+    margin: 1rem;
+}
+.copertina{
+    width: 48.625rem;
+    height: 11.3035rem;
+    flex-shrink: 0;
+    border-radius: 3.125rem;
+    background: var(--blu, #8BCEEC);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+}
+
+#logo {
+    background: url(../img/ITSApplogo.svg) center no-repeat;
+    width: 17.25131rem;
+    height: 6.04913rem;
+    margin-top: 20px;
+}
+
+.copertina h2 {
+    display: flex;
+    width: 38.64919rem;
+    height: 2.55056rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 0.9375rem;
+    font-weight: 700;
+}
+
+/*ha le stesse proprietà della classe copertina*/
+.login {
+    width: 48.625rem;
+    height: 18rem;
+    flex-shrink: 0;
+    border-radius: 3.125rem;
+    background: var(--blu, #8BCEEC);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.11);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 21px;
+}
+
+.login label {
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 0.5rem;
+    border: none;
+}
+.login input {
+    width: 14rem;
+    height: 1.8rem;
+    flex-shrink: 0;
+    border-radius: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    border: none;
+    text-align: center;
+    color: #1f3843;
+}
+
+.login input:focus {
+    outline: none;
+}
+
+
+#submit  {
+        border: none;
+        margin-top: 1.6rem;
+        width: 10rem;
+        height: 2.25rem;
+        flex-shrink: 0;
+        border-radius: 0.875rem;
+        background: #FFF;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        color: var(--orange, #FF4040);
+        text-align: center;
+        font-weight: 700;
+        text-transform: uppercase;
+       
+    }
+    form {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+
+.titolo {
+   
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+    margin-bottom: 22px; 
+    padding-top: 47px;
+} 
+.icn {
+    width: 69px;
+    height: 70px;
+    flex-shrink: 0;
+    margin-right: 40px;
+}
+
+#rettangolo1 {
+   width: 506px;
+    border-radius: 62px;
+height: 227px;
+background: #F5F5F5;
+margin-left: 20%;
+display: flex;
+
+}
+
+
+
+#foto-prof {
+    width: 136px;
+    height: 167px;
+    margin: 30px auto 30px 51px;
+    position: relative;
+}
+
+#link-prof {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 232px;
+    margin-top: 45px;
+    gap: 18px ;
+}
+
+#link-prof a {
+    text-transform: none !important;
+    color: #447890;
+    font-size: 25px;
+    font-weight: 600;
+}
