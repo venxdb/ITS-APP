@@ -7,14 +7,9 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <nav>
-        <div ><div id="cornice" ><a href="#0">Home</a></div></div>
-        <div><a href="#0">Avvisi</a></div>
-        <div><a href="#0">Registro</a></div>
-        <div><a href="#0">Orari</a></div>
-        <div><a href="#0">Materiali</a></div>
-    </nav>
-    <div class="profile-container">
+<?php include 'nav.php'; ?>    
+
+<div class="profile-container">
         
         <?php
         session_start();
@@ -39,32 +34,32 @@
         if ($result->num_rows > 0) {
             // Output dei dati del professore
             $row = $result->fetch_assoc();
-            echo "<div class='titolo'><img src='../img/prof-icn.svg' alt='Icona Professore' class='icn'><h2>" . $row["nome"] . " " . $row["cognome"] . "</h2></div>";
-            echo "<div id='rettangolo1'><img src='data:image/png;base64," . base64_encode($row['foto_profilo']) . "' alt='Foto Profilo' id='foto-prof'><div id='link-prof'><a href='#0'>Il tuo account</a><a href='#0'>Impostazioni</a><a href='#0'>Esci</a></div></div>";
+            echo "<div class='titolo'>
+            <img src='../img/prof-icn.svg' alt='Icona Professore' class='icn'>
+            <h2>" .
+            $row["nome"] . 
+            " " . $row["cognome"] .
+             "</h2></div>";
+            echo
+             "<div id='rettangolo1'><img src='data:image/png;base64," . base64_encode($row['foto_profilo']) .
+              "' alt='Foto Profilo' id='foto-prof'><div id='link-prof'><a href='#0'>Il tuo account</a><a href='#0'>Impostazioni</a><a href='#0'>Esci</a></div></div>";
             
-            echo "<p>Orario delle lezioni settimanali:</p>";
-            echo "<p>" . $row["orario_lezioni"] . "</p>";
+            echo "<div id='orario-prof'><h3>Orario delle lezioni settimanali:</h3><div id='rettangolo2'>";
+            echo "<p>" . $row["orario_lezioni"] . "</p></div></div>";
         } else {
             echo "Nessuna informazione trovata.";
         }
         $conn->close();
         ?>
-
-        <!-- Form per modificare l'orario delle lezioni -->
-        <form action="update_schedule.php" method="post">
-            <h3>Modifica Orario Lezioni</h3>
-            <label for="orario_lezioni">Orario Lezioni:</label>
-            <textarea name="orario_lezioni" id="orario_lezioni"></textarea>
-            <button type="submit">Salva</button>
+        <div id='contatta-coord'>
+         <h3>Contatta un Coordinatore</h3>
+        <form action="send_message_to_coordinator.php" method="post">
+            <label for="message_coordinator">Messaggio:</label>
+            <textarea name="message_coordinator" id="message_coordinator" required></textarea>
+            <button type="submit" id="bottone">Invia</button>
         </form>
-
-        <!-- Form per inviare notifiche -->
-        <form action="send_notification.php" method="post">
-            <h3>Invia Notifica</h3>
-            <label for="notifica">Messaggio:</label>
-            <textarea name="notifica" id="notifica"></textarea>
-            <button type="submit">Invia</button>
-        </form>
+        </div>
     </div>
+     
 </body>
 </html>

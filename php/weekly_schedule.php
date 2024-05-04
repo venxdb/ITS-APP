@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weekly Schedule</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="schedule-container">
-        <h2>Weekly Schedule</h2>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weekly Schedule</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <?php include 'nav.php'; ?>    
+        
+        <div class="schedule-container">
+            <h2>Weekly Schedule</h2>
+            
+            <!-- Form per modificare l'orario delle lezioni -->
+            <form action="update_schedule.php" method="post">
+                <h3>Modifica Orario Lezioni</h3>
+                <label for="orario_lezioni">Orario Lezioni:</label>
+                <textarea name="orario_lezioni" id="orario_lezioni"></textarea>
+                <button type="submit">Salva</button>
+            </form>
+            
+            <!-- Form per inviare notifiche -->
+            <form action="send_notification.php" method="post">
+                <h3>Invia Notifica</h3>
+                <label for="notifica">Messaggio:</label>
+                <textarea name="notifica" id="notifica"></textarea>
+                <button type="submit" id="bottone">Invia</button>
+            </form>
         <?php
         $user = 'root';
         $password = 'root';

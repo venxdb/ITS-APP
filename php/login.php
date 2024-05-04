@@ -31,7 +31,7 @@
                             name="password"
                             placeholder="Password"
                             required="required">
-                        <button type="submit" id = "submit">Login</button>
+                        <button type="submit" class = "submit-butt">Login</button>
                     </form>
                     <div id="login-error" class="error-message"></div>
                 </div>
