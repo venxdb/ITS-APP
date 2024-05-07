@@ -196,53 +196,6 @@ body {
     font: 1em Arial, sans-serif;
 }
 
-a{
-    text-decoration: none;
-    text-transform: uppercase;
-}
-/*******nav*********/
-nav {
-    position: absolute;
-    top: 0;
-    right: 0;
-   
-    right: 10px;
-    flex-shrink:10;
-    background-color: #f6f6f4 ;
-}
-
-nav div {
-    height: 115px;
-    background-color: var(--navcolor);
-    padding: 10px;
-    border-radius:0 25px 0 0; 
-
-
-}
-
-
-#cornice {
-    background-color: var(--boxcolor);
-    border-radius: 10px;
-    width: 100px;
-    height: 25px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-
-}
-
-nav div:hover {
-    background-color: var(--blubackground);
-    border-radius:0 25px 0 0; 
-}
-
-nav div:nth-child(5) {
-    background-color: var(--blubackground);
-    border-radius:0 25px 0 0; 
-}
-
-
 
 
 /*******pagina*********/
