@@ -411,7 +411,7 @@ form {
     margin-top: 50px;
 }
 
-.bottone {
+.bottone, #bottone {
     margin-top: 20px;
     width: 10rem;
     height: 2.25rem;
@@ -422,28 +422,16 @@ form {
     border: none;
     align-self: center;
     text-transform: uppercase;
-<<<<<<< HEAD
     font-size: 0.8em;
     color: var(--orange, #FF4040);
     text-align: center;
     font-weight: 700;
 
-=======
->>>>>>> cb5ca061d8bb5fa4f02400a53c4df93864dd0299
 }
 
-.bottone:hover {
+.bottone:hover, #bottone {
     box-shadow: none;
-<<<<<<< HEAD
 
 }
 
-=======
-  
-}
-
-.schedule-container {
-    font: 1em Arial, sans-serif;
-}
->>>>>>> cb5ca061d8bb5fa4f02400a53c4df93864dd0299
 
