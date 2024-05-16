@@ -118,6 +118,7 @@ header {
     border-radius: 0.875rem;
     background: #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 20px;
 }
 
 .cards .cardscont button > a {
@@ -408,6 +409,7 @@ header {
     border: none;
     text-align: center;
     color: #1f3843;
+    resize: none;
 }
 
 .login input:focus {
@@ -456,7 +458,7 @@ header {
 }
 
 #rettangolo1 {
-   width: 506px;
+  margin-right: 10%;
     border-radius: 62px;
 height: 227px;
 background: #F5F5F5;
@@ -503,7 +505,8 @@ display: flex;
 }
 
 #rettangolo2{
-    width: 957px;
+    margin-right: 10%;
+
     height: 228.5px;    
     background-color:  #F5F5F5;
     border-radius: 62px;
@@ -527,6 +530,8 @@ height: 227px;
 background: #F5F5F5;
 border: none;
   padding: 20px;
+  resize: none;
+
 }
 #contatta-coord {
     display: flex;
@@ -556,4 +561,10 @@ border: none;
    color: var(--orange, #FF4040);
    text-align: center;
    font-weight: 700;
+ 
+}
+
+#bottone:hover {
+    box-shadow: none;
+  
 }

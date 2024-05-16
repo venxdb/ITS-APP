@@ -1,5 +1,4 @@
-* {
-}
+
 nav span {
     display: flex;
     align-items: center;
@@ -19,16 +18,24 @@ nav a {
     text-decoration: none;
     margin-left: 10px;
     color: var(--colortext);
-    font-weight: bold;
-    font-size: 1.5em;
+    
+    font-size: 1.3em;
+}
+
+nav span:hover a {
+    color: white;
 }
 
 nav span:hover {
     background-color:#84CBEB;
-  
+  box-shadow: 2px -2px 5px 0px rgba(28, 39, 76, 0.15);
 }
 
 #home  {
     background-color: var(--blubackground);
 }
 
+.profile-container {
+    box-shadow: 5px -5px 14px 5px rgba(0, 0, 0, 0.11);
+    width: 100%;
+}
