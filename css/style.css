@@ -546,7 +546,7 @@ border: none;
     margin-top: 50px;
 }
 
-#bottone {
+.bottone {
     margin-top: 20px;
     width: 10rem;
     height: 2.25rem;
@@ -564,7 +564,12 @@ border: none;
  
 }
 
-#bottone:hover {
+.bottone:hover {
     box-shadow: none;
   
 }
+
+.schedule-container {
+    font: 1em Arial, sans-serif;
+}
+
