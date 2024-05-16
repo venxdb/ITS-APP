@@ -557,11 +557,6 @@ border: none;
     border: none;
    align-self: center;
     text-transform: uppercase;
-    font-size: 0.8em;
-   color: var(--orange, #FF4040);
-   text-align: center;
-   font-weight: 700;
- 
 }
 
 .bottone:hover {
