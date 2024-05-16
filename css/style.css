@@ -557,11 +557,15 @@ border: none;
     border: none;
    align-self: center;
     text-transform: uppercase;
+    color: var(--orange, #FF4040);
+    font-weight: 700;
 }
 
 .bottone:hover {
     box-shadow: none;
-  
+    cursor: pointer;
+    background-color: var(--orange, #FF4040);
+    color: #FFF;
 }
 
 .schedule-container {
