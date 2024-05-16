@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Weekly Schedule</title>
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/nav-style.css">
+
     </head>
     <body>
         <?php include 'nav.php'; ?>    
@@ -14,18 +16,18 @@
             
             <!-- Form per modificare l'orario delle lezioni -->
             <form action="update_schedule.php" method="post">
-                <h3>Modifica Orario Lezioni</h3>
-                <label for="orario_lezioni">Orario Lezioni:</label>
+                <h3 class="options">Modifica Orario Lezioni</h3>
+                <label for="orario_lezioni" class="etichette">Orario Lezioni:</label>
                 <textarea name="orario_lezioni" id="orario_lezioni"></textarea>
-                <button type="submit">Salva</button>
+                <button type="submit" class="bottone">Salva</button>
             </form>
             
             <!-- Form per inviare notifiche -->
             <form action="send_notification.php" method="post">
-                <h3>Invia Notifica</h3>
-                <label for="notifica">Messaggio:</label>
+                <h3 class="options">Invia Notifica</h3>
+                <label for="notifica" class="etichette">Messaggio:</label>
                 <textarea name="notifica" id="notifica"></textarea>
-                <button type="submit" id="bottone">Invia</button>
+                <button type="submit" class="bottone">Invia</button>
             </form>
         <?php
         $user = 'root';
@@ -69,5 +71,6 @@
         $conn->close();
         ?>
     </div>
+    
 </body>
 </html>

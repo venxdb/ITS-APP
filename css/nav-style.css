@@ -39,3 +39,15 @@ nav span:hover {
     box-shadow: 5px -5px 14px 5px rgba(0, 0, 0, 0.11);
     width: 100%;
 }
+
+.options {
+    margin-top: 60px;
+    color: var(--colortext);
+    font-size: 1.3em;
+}
+
+.etichette{
+    color: var(--colortext);
+    font-size: 1.3em; 
+    margin-top: 60px;
+}
