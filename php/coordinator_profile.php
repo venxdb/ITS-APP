@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profilo Coordinatore - ITSAPP</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/nav-style.css">
-    <link rel="stylesheet" href="../css/coord-style.css">
-</head>
-<body>
-<?php include 'nav.php'; ?>   
-<div class="profile-container"> 
-<?php
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profilo Coordinatore - ITSAPP</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/nav-style.css">
+        <link rel="stylesheet" href="../css/coord-style.css">
+    </head>
+    <body>
+        <?php include 'nav.php'; ?>
+        <div class="profile-container">
+        <?php
         session_start();
 
         // Connessione al database
@@ -54,11 +54,12 @@
             echo "Nessuna informazione trovata.";
         }
         ?>
-         <ul class="gestione-coord">
-            <li><a href='manage_students.php'>Gestisci Studenti</a></li>
-            <li><a href='manage_professors.php'>Gestisci Professori</a></li>
-            <li><a href='manage_permissions.php'>Gestisci Autorizzazioni</a></li>
-        </ul>
-    </div></div>
+    </div>
+    <ul class="gestione-coord">
+       <li><a href='manage_students.php'>Gestisci Studenti</a></li>
+       <li><a href='manage_professors.php'>Gestisci Professori</a></li>
+       <li><a href='manage_permissions.php'>Gestisci Autorizzazioni</a></li>
+   </ul>
+   </div>
 </body>
 </html>

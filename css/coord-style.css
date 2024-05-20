@@ -1,26 +1,31 @@
-* {
-   border: 1px solid #000;
-}
-#rettangolo1 {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
- li {
+li {
     background-color: white;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 5px;
     text-align: center;
     list-style: none;
     margin-bottom: 20px;
+    min-width: 200px;
+   
 }
+.gestione-coord {
+    margin-left: 20%;
+    margin-right: 30%;
+    margin-top: 40px;
+    padding-bottom: 5%;
+}
+
 .gestione-coord a {
     text-decoration: none;
     /*text-transform: uppercase;*/
-    font-size: 0.8em;
+    font-size: 1em;
     font-weight: 700;
     --colortext: #447890;
     color: var(--colortext);
+    margin-bottom: 5%;
+}
+
+li:hover {
+    box-shadow: none;
 }

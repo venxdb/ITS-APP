@@ -325,20 +325,22 @@ form {
 }
 
 #rettangolo1 {
-    margin-right: 10%;
+    align-items: center;
     border-radius: 62px;
-    height: 227px;
     background: #F5F5F5;
-    margin-left: 20%;
     display: flex;
-
+    gap: 10px;
+    margin-left: 20%;
+    margin-right: 30%;
+    height: 227px;
+    justify-content: space-evenly;
+    padding: 20px;
 }
 
-#foto-prof {
-    height: 50%;
 
-}
-
+/*
+* ////////////////////PROFESSORE
+*/
 #link-prof {
     display: flex;
     flex-direction: column;
