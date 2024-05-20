@@ -336,8 +336,6 @@ form {
 
 #foto-prof {
     height: 50%;
-    margin: 30px auto 30px 51px;
-    position: relative;
 
 }
 
@@ -379,6 +377,10 @@ form {
     align-items: center;
     margin-left: 20%;
 }
+
+/*
+* /////////////////////  PAGINA HOME COORDINATORE  ////////////////////////
+*/
 
 #contatta-coord label {
     text-transform: none !important;

@@ -6,6 +6,7 @@
     <title>Profilo Coordinatore - ITSAPP</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/nav-style.css">
+    <link rel="stylesheet" href="../css/coord-style.css">
 </head>
 <body>
 <?php include 'nav.php'; ?>   
@@ -40,18 +41,24 @@
             " " . $row["cognome"] .
              "</h2></div>";
             echo
-             "<div id='rettangolo1'><img src='data:image/png;base64," . base64_encode($row['foto_profilo']) .
-              "' alt='Foto Profilo' id='foto-prof'><div id='link-prof'><a href='#0'>Il tuo account</a><a href='#0'>Impostazioni</a><a href='#0'>Esci</a></div></div>";
+             "<div id='rettangolo1' class='gestione-coord'>
+             <img src='data:image/png;base64," . base64_encode($row['foto_profilo']) .
+              "' alt='Foto Profilo' id='foto-prof'><div id='gestione-coord'>
+              <ul>
+              <li><a href='#0'>Il tuo account</a></li>
+             <li> <a href='#0'>Impostazioni</a></li>
+             <li> <a href='#0'>Esci</a> </li>
+             </ul>
+              </div>";
         } else {
             echo "Nessuna informazione trovata.";
         }
         ?>
-         <ul>
+         <ul class="gestione-coord">
             <li><a href='manage_students.php'>Gestisci Studenti</a></li>
             <li><a href='manage_professors.php'>Gestisci Professori</a></li>
             <li><a href='manage_permissions.php'>Gestisci Autorizzazioni</a></li>
         </ul>
-       
-    </div>
+    </div></div>
 </body>
 </html>
