@@ -6,12 +6,15 @@
     <title>Profilo Professore</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/nav-style.css">
+    <link rel="stylesheet" href="../css/coord-style.css">
+    <link rel="stylesheet" href="../css/professor-style.css">
+        <link rel="stylesheet" href="../css/footer-style.css">
 </head>
 <body>
 <?php include 'nav.php'; ?>    
 
 <div class="profile-container">
-        
+
         <?php
         session_start();
 
@@ -42,9 +45,15 @@
             " " . $row["cognome"] .
              "</h2></div>";
             echo
-             "<div id='rettangolo1'><img src='data:image/png;base64," . base64_encode($row['foto_profilo']) .
-              "' alt='Foto Profilo' id='foto-prof'><div id='link-prof'><a href='#0'>Il tuo account</a><a href='#0'>Impostazioni</a><a href='#0'>Esci</a></div></div>";
-            
+             "<div id='rettangolo1' class='gestione-coord'>
+             <img src='data:image/png;base64," . base64_encode($row['foto_profilo']) .
+              "' alt='Foto Profilo' id='foto-prof'><div id='gestione-coord'>
+              <ul>
+              <li><a href='#0'>Il tuo account</a></li>
+             <li> <a href='#0'>Impostazioni</a></li>
+             <li> <a href='./login.php'>Esci </li></a>
+             </ul>
+              </div></div>";
             echo "<div id='orario-prof'><h3>Orario delle lezioni settimanali:</h3><div id='rettangolo2'>";
             echo "<p>" . $row["orario_lezioni"] . "</p></div></div>";
         } else {
@@ -52,6 +61,7 @@
         }
         $conn->close();
         ?>
+        
         <div id='contatta-coord'>
          <h3>Contatta un Coordinatore</h3>
         <form action="send_message_to_coordinator.php" method="post">
@@ -61,6 +71,7 @@
         </form>
         </div>
     </div>
-     
+    <?php include 'footer.php'; ?>
+
 </body>
 </html>

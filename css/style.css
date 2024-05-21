@@ -433,7 +433,7 @@ form {
 
 }
 
-.bottone:hover, #bottone {
+.bottone:hover, #bottone:hover {
     box-shadow: none;
     cursor: pointer;
     background-color: var(--orange, #FF4040);

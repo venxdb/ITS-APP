@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/nav-style.css">
         <link rel="stylesheet" href="../css/coord-style.css">
+        <link rel="stylesheet" href="../css/footer-style.css">
     </head>
     <body>
         <?php include 'nav.php'; ?>
@@ -61,5 +62,7 @@
        <li><a href='manage_permissions.php'>Gestisci Autorizzazioni</a></li>
    </ul>
    </div>
+   <?php include 'footer.php'; ?>
+
 </body>
 </html>

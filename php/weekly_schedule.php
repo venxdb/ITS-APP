@@ -6,6 +6,8 @@
         <title>Weekly Schedule</title>
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/nav-style.css">
+        <link rel="stylesheet" href="../css/coord-style.css">
+        <link rel="stylesheet" href="../css/footer-style.css">
 
     </head>
     <body>

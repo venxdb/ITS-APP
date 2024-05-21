@@ -10,11 +10,14 @@ include_once 'backend/access_control.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Profile</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/nav-style.css">
+        <link rel="stylesheet" href="../css/coord-style.css">
+        <link rel="stylesheet" href="../css/footer-style.css">
+    </head>
 <body>
+<?php include 'nav.php'; ?>
     <div class="profile-container">
-        <h1>Profilo Studente</h1>
         <?php
         session_start();
     
@@ -39,18 +42,36 @@ $conn = new mysqli($host, $user, $password, $db, $port);
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
-            // Output dei dati dello studente
-            $row = $result->fetch_assoc();
-            echo "<h3>Nome: " . $row["nome"] . "</h3>";
-            echo "<h3>Cognome: " . $row["cognome"] . "</h3>";
-            echo "<img  src='data:image/png;base64,".base64_encode($row['foto_profilo'])."' alt='Foto Profilo'>";
-            echo "<p>Orario delle lezioni settimanali:</p>";
-            echo "<p>" . $row["orario_lezioni"] . "</p>";
-        } else {
+          echo "<div class='titolo'>
+            <img src='../img/prof-icn.svg' alt='Icona Professore' class='icn'>
+            <h2>" .
+            $row["nome"] . 
+            " " . 
+            $row["cognome"] .
+             "</h2></div>";
+            echo
+             "<div id='rettangolo1' class='gestione-coord'>
+             <img src='data:image/png;base64," . 
+             base64_encode($row['foto_profilo']) .
+            "' alt='Foto Profilo' id='foto-prof'><div id='gestione-coord'>
+              <ul>
+              <li><a href='#0'>Il tuo account</a></li>
+             <li> <a href='#0'>Impostazioni</a></li>
+             <li> <a href='./login.php'>Esci </li></a>
+             </ul>
+            </div></div>";
+
+            echo "<div id='orario-prof'>
+            <h3>Orario delle lezioni settimanali:</h3>
+            <div id='rettangolo2'>";
+            echo "<p>" . 
+            $row["orario_lezioni"] . 
+            "</p></div></div>";
             echo "Nessuna informazione trovata.";
         }
         $conn->close();
         ?>
     </div>
+    <?php include 'footer.php'; ?>
 </body>
 </html>

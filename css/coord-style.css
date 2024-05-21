@@ -29,3 +29,8 @@ li {
 li:hover {
     box-shadow: none;
 }
+
+.gestione-coord img {
+    width: 20%;
+    margin-right: 20px;
+}

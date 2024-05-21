@@ -1,0 +1,26 @@
+/*
+* /////////////////////  PAGINA HOME COORDINATORE  ////////////////////////
+*/
+
+#contatta-coord {
+    color: #447890;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+#contatta-coord label {
+    text-transform: none !important;
+    color: #447890;
+    margin-bottom: 20px;
+}
+#contatta-coord textarea {
+    width: 506px;
+    border-radius: 62px;
+    height: 227px;
+    background: #F5F5F5;
+    border: none;
+    padding: 20px;
+    resize: none;
+
+}
