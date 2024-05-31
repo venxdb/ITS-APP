@@ -1,3 +1,4 @@
+
 /* Reset CSS */
 * {
     box-sizing: border-box;
@@ -18,6 +19,39 @@
     --textlightcolor: #fff;
     --textnavcolordarker: #84cbeb;
 }
+/*
+***********************BUTTONS*****************************/
+.bottone {
+    margin-top: 20px;
+    width: 10rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    border-radius: 0.875rem;
+    background: #FFF;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border: none;
+    align-self: center;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: var(--orange, #FF4040);
+    text-align: center;
+    font-weight: 700;
+    transition: all 0.5s ease; 
+
+}
+
+.bottone:hover {
+    box-shadow: none;
+    cursor: pointer;
+    background-color: var(--orange, #FF4040);
+    color: #FFF;
+}
+
+
+/*
+
+***********************INDEX.HTML*****************************
+/*
 
 /* Body */
 body {
@@ -114,6 +148,33 @@ form {
     height: 15rem;
     justify-content: center;
     width: 15rem;
+    .bottone {
+    margin-top: 20px;
+    width: 10rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    border-radius: 0.875rem;
+    background: #FFF;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border: none;
+    align-self: center;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: var(--orange, #FF4040);
+    text-align: center;
+    font-weight: 700;
+    transition: all 0.5s ease; 
+
+}
+
+.bottone:hover {
+    box-shadow: none;
+    cursor: pointer;
+    background-color: var(--orange, #FF4040);
+    color: #FFF;
+}
+
+
 }
 
 /* Cards Paragraph */
@@ -122,6 +183,7 @@ form {
     flex-shrink: 0;
     height: 7rem;
     width: 7rem;
+    transition: all 0.3s ease; 
 }
 
 /* Cards Hover */
@@ -166,30 +228,6 @@ form {
     margin-top: 1.31rem;
 }
 
-/* Cards Container Button */
-.cards .cardscont button {
-    background: #FFF;
-    border: none;
-    border-radius: 0.875rem;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    flex-shrink: 0;
-    height: 2.25rem;
-    margin-top: 20px;
-    width: 10rem;
-}
-
-/* Cards Container Button Link */
-.cards .cardscont button > a {
-    color: var(--orange, #FF4040);
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 700;
-    letter-spacing: 0.09375rem;
-    text-align: center;
-    text-decoration: none;
-}
-
-/* Cards Div */
 .cards div {
     background: var(--blu, #8BCEEC);
     border-radius: 2.125rem;
@@ -199,28 +237,8 @@ form {
     width: 15rem;
 }
 
-/* Button Text */
-.button .button-text {
-    color: var(--orange, #FF4040);
-    display: none;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 700;
-    letter-spacing: 0.09375rem;
-    text-align: center;
-    text-decoration: none;
-}
-
-/* Button Hover */
-.button:hover .button-text {
-    display: inline;
-}
-
-/* Button Hover A */
-.button:hover a {
-    display: none;
-}
-
+/*
+***************************************************************
 /* Nome */
 .nome {
     color: var(--blutext);
@@ -289,25 +307,9 @@ form {
     text-transform: uppercase;
 }
 
-/* Submit Button */
-.submit-butt {
-    background: #FFF;
-    border: none;
-    border-radius: 0.875rem;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    color: var(--orange, #FF4040);
-    flex-shrink: 0;
-    font-weight: 700;
-    height: 2.25rem;
-    margin-top: 1.6rem;
-    text-align: center;
-    text-transform: uppercase;
-    width: 10rem;
-}
 
 /******************PROFESSOR_PROFILE************************************************************/
 .titolo {
-
     display: flex;
     align-items: center;
     margin-left: 20%;
@@ -413,31 +415,6 @@ form {
     gap: 20px;
     padding-bottom: 300px;
     margin-top: 50px;
-}
-
-.bottone, #bottone {
-    margin-top: 20px;
-    width: 10rem;
-    height: 2.25rem;
-    flex-shrink: 0;
-    border-radius: 0.875rem;
-    background: #FFF;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    border: none;
-    align-self: center;
-    text-transform: uppercase;
-    font-size: 0.8em;
-    color: var(--orange, #FF4040);
-    text-align: center;
-    font-weight: 700;
-
-}
-
-.bottone:hover, #bottone:hover {
-    box-shadow: none;
-    cursor: pointer;
-    background-color: var(--orange, #FF4040);
-    color: #FFF;
 }
 
 

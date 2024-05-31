@@ -6,6 +6,9 @@ nav span {
     border-radius: 25px 25px 0 0 ;
     box-shadow: 2px -2px 5px 0px rgba(28, 39, 76, 0.15);
 }
+img {
+    width: 100px;
+}
 nav {
     min-height: 100px;
     background-color: azure;
@@ -22,11 +25,11 @@ nav a {
     font-size: 1.3em;
 }
 
-nav span:hover a {
+nav li:hover a {
     color: white;
 }
 
-nav span:hover {
+nav li:hover {
     background-color:#84CBEB;
   box-shadow: 2px -2px 5px 0px rgba(28, 39, 76, 0.15);
 }
@@ -50,4 +53,8 @@ nav span:hover {
     color: var(--colortext);
     font-size: 1.3em; 
     margin-top: 60px;
+}
+nav ul{
+    display: flex;
+    gap: 10px;
 }

@@ -10,9 +10,8 @@
     <link rel="stylesheet" href="../css/professor-style.css">
         <link rel="stylesheet" href="../css/footer-style.css">
 </head>
-<body>
-<?php include 'nav.php'; ?>    
-
+<body>    
+<?php include 'nav.php'; renderNav("HOME"); ?>
 <div class="profile-container">
 
         <?php
