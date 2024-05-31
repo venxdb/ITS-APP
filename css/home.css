@@ -22,8 +22,9 @@
     /*text-transform: uppercase;*/
     font-size: 1em;
     font-weight: 700;
-    --colortext: #447890;
+    --colortext: #3f61ab;
     color: var(--colortext);
+  
 
 }
 
@@ -31,10 +32,6 @@ li:hover {
     box-shadow: none;
 }
 
-.home-info img {
-    width: 20%;
-    margin-right: 20px;
-}
 
 /***************COORDINATORE LINKS*****/
 

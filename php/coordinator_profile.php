@@ -36,15 +36,15 @@
         if ($result->num_rows > 0) {
             // Output dei dati del professore
             $row = $result->fetch_assoc();
-            echo "<div class='titolo'>
+            echo "<div class='contenitore' ><div class='titolo'>
             <img src='../img/coordinatore-icn.svg' alt='Icona Professore' class='icn'>
             <h2>" .
             $row["nome"] . 
             " " . $row["cognome"] .
              "</h2></div>";
             echo
-             "<div  class='gestione-coord coordinatore'><div class='home-info'>
-             <img src='data:image/png;base64," . base64_encode($row['foto_profilo']) .
+             "<div class='home-info'>
+             <img src='../img/foto_profilo_sara.png" .  
               "' alt='Foto Profilo' id='foto-prof'><div id='gestione-coord'>
               <ul >
               <li ><a href='account.php'>Il tuo account</a></li>
@@ -57,12 +57,13 @@
         }
         ?>
     </div>
-    <div class="gestione-coord coordinatore">
+    <div class="coordinatore">
        <a href='manage_students.php'>Gestisci Studenti</a>
        <a href='manage_professors.php'>Gestisci Professori</a>
        <a href='manage_permissions.php'>Gestisci Autorizzazioni</a>
    </div>
    </div>
+    </div></div>
     
    <?php include 'footer.php'; ?>
 

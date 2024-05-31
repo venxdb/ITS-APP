@@ -61,7 +61,9 @@ body {
 .profile-container {
     background: #DAF0FA;
     height: 100vh;
-    padding-left: 50px;
+    padding-left: 33%;
+    position: relative;
+    
 }
 
 /* Header */
@@ -93,15 +95,21 @@ form {
     flex-direction: column;
     justify-content: center;
 }
+.contenitore {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
 /*
 /* ////////////////////////////////////////////////////// HOMEPAGE//////////////////
 */
 /* Centrale */
 .centrale {
-    align-items: center;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 /* Copertina */
@@ -231,7 +239,6 @@ form {
 .cards {
     display: flex;
     gap: 1.31rem;
-    justify-content: space-between;
     margin-top: 1.31rem;
 }
 
@@ -286,6 +293,7 @@ form {
     justify-content: center;
     margin-top: 21px;
     width: 48.625rem;
+    margin-bottom: 100px;
 }
 
 /* Login Input */
