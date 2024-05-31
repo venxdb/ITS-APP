@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="../css/footer-style.css">
 </head>
 <body>
+<?php include 'nav.php' ?>
     <div class="contacts-container">
         <h2>Contatti</h2>
         <h3>Contatta un Professore</h3>

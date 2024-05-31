@@ -16,7 +16,7 @@ include_once 'backend/access_control.php';
         <link rel="stylesheet" href="../css/footer-style.css">
     </head>
 <body>
-<?php include 'nav.php'; renderNav("HOME"); ?>
+<?php include 'nav.php' ?>
     <div class="profile-container">
         <?php
         session_start();

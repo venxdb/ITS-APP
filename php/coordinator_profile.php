@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="../css/footer-style.css">
     </head>
     <body>
-    <?php include 'nav.php'; renderNav("HOME"); ?>
+    <?php include 'nav.php' ?>
         <div class="profile-container">
         <?php
         session_start();
@@ -47,9 +47,9 @@
              <img src='data:image/png;base64," . base64_encode($row['foto_profilo']) .
               "' alt='Foto Profilo' id='foto-prof'><div id='gestione-coord'>
               <ul >
-              <li ><a href='#0'>Il tuo account</a></li>
-             <li> <a href='#0'>Impostazioni</a></li>
-             <li> <a href='#0'>Esci</a> </li>
+              <li ><a href='account.php'>Il tuo account</a></li>
+             <li> <a href='account.php'>Impostazioni</a></li>
+             <li> <a href='../index.html'>Esci</a> </li>
              </ul>
               </div></div>";
         } else {
@@ -57,11 +57,11 @@
         }
         ?>
     </div>
-    <ul class="gestione-coord coordinatore">
-       <li><a href='manage_students.php'>Gestisci Studenti</a></li>
-       <li><a href='manage_professors.php'>Gestisci Professori</a></li>
-       <li><a href='manage_permissions.php'>Gestisci Autorizzazioni</a></li>
-   </ul>
+    <div class="gestione-coord coordinatore">
+       <a href='manage_students.php'>Gestisci Studenti</a>
+       <a href='manage_professors.php'>Gestisci Professori</a>
+       <a href='manage_permissions.php'>Gestisci Autorizzazioni</a>
+   </div>
    </div>
     
    <?php include 'footer.php'; ?>

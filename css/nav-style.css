@@ -2,14 +2,13 @@
 
 img {
     height: 50px;
-    margin-bottom: 5px; 
+    
 }
 nav {
-    justify-content: center;
+    justify-content: space-around;
     display: flex;
-    padding: 1%  1% 0 1%;
-    gap: 5%;
-    background-color: aliceblue;
+    padding: 2%  1% 0 1%;
+    min-height: 100px;
 }
 nav ul{
     display: flex;
@@ -18,11 +17,12 @@ nav ul{
 nav li {
     background-color:#DAF0FA;
     border-radius: 10px 10px 0 0;
-    padding: 10px;    
-    text-align: right;
+    padding-top: 20px;    
+    text-align: center;
     list-style: none;
-   min-width: 150px;
+    min-width: 150px;
    height: 100%;
+   transition: all 0.5s ease; 
    
 }
 

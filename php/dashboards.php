@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="../css/footer-style.css">
 </head>
 <body>
+<?php include 'nav.php' ?>
     <div class="dashboard-container">
         <h2>Dashboard</h2>
         <div class="notification-list">

@@ -55,9 +55,13 @@
 
 /* Body */
 body {
+    
+    margin: 0 5% 0 5%;
+}
+.profile-container {
     background: #DAF0FA;
-    font: 1em Arial, sans-serif;
-    font-family: sans-serif;
+    height: 100vh;
+    padding-left: 50px;
 }
 
 /* Header */
@@ -78,6 +82,9 @@ h2 {
 /* Paragraph */
 p {
     font-size: 30px;
+}
+li {
+    list-style: none;
 }
 
 /* Form */

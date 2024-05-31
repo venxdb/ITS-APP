@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="../css/footer-style.css">
 </head>
 <body>
+<?php include 'nav.php' ?>
     <div class="attendance-container">
         <h2>Attendance</h2>
         <?php

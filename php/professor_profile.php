@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="../css/footer-style.css">
 </head>
 <body>    
-<?php include 'nav.php'; renderNav("HOME"); ?>
+<?php include 'nav.php' ?>
 <div class="profile-container">
 
         <?php
