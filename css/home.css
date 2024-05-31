@@ -1,0 +1,45 @@
+.titolo {
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+    margin-bottom: 22px;
+    padding-top: 47px;
+
+}
+.icn {
+    width: 69px;
+    height: 70px;
+    flex-shrink: 0;
+    margin-right: 40px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.home-info {
+    display: flex;
+}
+
+.gestione-coord {
+    margin-left: 20%;
+    margin-right: 30%;
+    margin-top: 40px;
+    padding-bottom: 5%;
+}
+
+.gestione-coord a {
+    text-decoration: none;
+    /*text-transform: uppercase;*/
+    font-size: 1em;
+    font-weight: 700;
+    --colortext: #447890;
+    color: var(--colortext);
+    margin-bottom: 5%;
+}
+
+li:hover {
+    box-shadow: none;
+}
+
+.gestione-coord img {
+    width: 20%;
+    margin-right: 20px;
+}

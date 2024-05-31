@@ -1,7 +1,7 @@
 <?php
 function renderNav($currentPage) {
     $links = [
-        "HOME" => "professor_profile.php",
+        "HOME" => "coordinator_profile.php",
         "ORARI" => "weekly_schedule.php",
         "AVVISI" => "contacts.php",
         "REGISTRO" => "attendance.php",
@@ -9,7 +9,7 @@ function renderNav($currentPage) {
     ];
 
     echo '<nav>';
-    echo '<img src="../img/logo.svg" alt="Logo ITS"></span>';
+    echo '<img src="../images/itsintero.svg" alt="Logo ITS"></span>';
     echo '<ul class="nav-links">';
 
     // Move the current page to the first position
@@ -20,10 +20,12 @@ function renderNav($currentPage) {
     }
 
     foreach ($links as $name => $url) {
-        echo '<li ><a id="etichette" href="' . $url . '"' . ($name === $currentPage ? ' class="active"' : '') . '>' . $name . '</a></li>';
+        echo 
+        '<a id="etichette" href="' . $url . '"' . ($name === $currentPage ? ' class="active"' : '') . '><li>' . $name . '</li></a>';
     }
 
     echo '</ul>';
+   
     echo '</div>';
     echo '</nav>';
 }

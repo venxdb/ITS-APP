@@ -7,10 +7,11 @@
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/nav-style.css">
         <link rel="stylesheet" href="../css/coord-style.css">
+        <link rel="stylesheet" href="../css/home.css">
         <link rel="stylesheet" href="../css/footer-style.css">
     </head>
     <body>
-        <?php include 'nav.php'; ?>
+    <?php include 'nav.php'; renderNav("HOME"); ?>
         <div class="profile-container">
         <?php
         session_start();
@@ -42,26 +43,27 @@
             " " . $row["cognome"] .
              "</h2></div>";
             echo
-             "<div id='rettangolo1' class='gestione-coord'>
+             "<div  class='gestione-coord coordinatore'><div class='home-info'>
              <img src='data:image/png;base64," . base64_encode($row['foto_profilo']) .
               "' alt='Foto Profilo' id='foto-prof'><div id='gestione-coord'>
-              <ul>
-              <li><a href='#0'>Il tuo account</a></li>
+              <ul >
+              <li ><a href='#0'>Il tuo account</a></li>
              <li> <a href='#0'>Impostazioni</a></li>
              <li> <a href='#0'>Esci</a> </li>
              </ul>
-              </div>";
+              </div></div>";
         } else {
             echo "Nessuna informazione trovata.";
         }
         ?>
     </div>
-    <ul class="gestione-coord">
+    <ul class="gestione-coord coordinatore">
        <li><a href='manage_students.php'>Gestisci Studenti</a></li>
        <li><a href='manage_professors.php'>Gestisci Professori</a></li>
        <li><a href='manage_permissions.php'>Gestisci Autorizzazioni</a></li>
    </ul>
    </div>
+    
    <?php include 'footer.php'; ?>
 
 </body>
