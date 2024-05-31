@@ -63,7 +63,7 @@ body {
     height: 100vh;
     padding-left: 33%;
     position: relative;
-    
+    padding-top: 50px;
 }
 
 /* Header */
@@ -80,10 +80,19 @@ h2 {
     font-size: 40px;
     text-transform: uppercase;
 }
+h3 {
+    color: var(--colortext);
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
 
 /* Paragraph */
 p {
     font-size: 30px;
+    color: var(--blutext);
 }
 li {
     list-style: none;
@@ -100,6 +109,7 @@ form {
     flex-direction: column;
     gap: 50px;
 }
+
 /*
 /* ////////////////////////////////////////////////////// HOMEPAGE//////////////////
 */
@@ -399,3 +409,16 @@ form {
 }
 
 
+/****weekly schedule***/
+.schedule-container textarea {
+    resize: none;
+    width: 600px;
+    height: 50px;
+    border-radius: 5px;
+}
+.weekly-form label{
+    color: var(--colortext);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
